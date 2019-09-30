@@ -8,6 +8,10 @@ First you need to exec the `xauth list` on your host terminal. The aprox result 
   
 Then exec `echo $DISPLAY`. The result will be **:1** or **:0**
 
+Run this command to run the container, replacing 
+
+`sudo docker run -i -t --name modelsim --net=host -e DISPLAY -v /tmp/.X11-unix goldensniper/modelsim-docker bash`
+
 Now inside the container exec the following command:
 
 `xauth add <hostname-of-machine>/unix:<no-of-display> MIT-MAGIC-COOKIE-1 <some number here>`
