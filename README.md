@@ -37,4 +37,16 @@ After this you should can run *vsim*: <br/>
 ![4](https://user-images.githubusercontent.com/43972902/129358116-fc510cc4-7236-432f-9a15-cfb26f4ae898.png)
 
 ## How to use modelsim with docker
-**How to **
+**How to run modelsim after installation:** <br/>
+1. List all containers and note ID: `docker ps -a` <br/>
+![1](https://user-images.githubusercontent.com/43972902/129359170-fcad70ab-2e8b-4eb3-aaa7-e4a6fdbbef3c.png)
+
+2. Run docker: `docker start 563bcbca514b` <br/>
+![2](https://user-images.githubusercontent.com/43972902/129359497-a6c24684-0e09-41ac-85fa-c9e4d05135f2.png)
+
+3. Run modelsim: `docker exec -it 563bcbca514b vsim` <br/>
+![q](https://user-images.githubusercontent.com/43972902/129359952-b831ac92-6590-4331-9cce-aad4bfcd3391.png) <br/>
+Now you can notice that container change their ID: <br/>
+![x](https://user-images.githubusercontent.com/43972902/129360141-bee778d0-35f5-4101-8903-770921d3fec4.png)
+
+4. If you want stop docker just: `docker stop 563bcbca514b`
