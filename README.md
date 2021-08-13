@@ -50,3 +50,17 @@ Now you can notice that container change their ID: <br/>
 ![x](https://user-images.githubusercontent.com/43972902/129360141-bee778d0-35f5-4101-8903-770921d3fec4.png)
 
 4. If you want stop docker just: `docker stop 563bcbca514b`
+
+## How to pass files between host and docker
+**One file:** *docker cp file_name containerID:destination*: <br/> 
+`docker cp design.v 563bcbca514b:/design.v` <br/> 
+After this file *design.v* will appear in */* directory. <br/>
+**Folder:** *docker cp what containerId:destination*: <br/>
+`docker cp ./ 563bcbca514b:/target` <br/>
+After this I'll create a new folder *target* inside */* directory with files from
+host under *./* directory.
+
+More info 
+[here](https://stackoverflow.com/questions/22907231/how-to-copy-files-from-host-to-docker-container).
+
+After all it looks like this
