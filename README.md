@@ -64,3 +64,15 @@ More info
 
 After all it looks like this (just as a normal modelsim ;D) : <br/> 
 ![s](https://user-images.githubusercontent.com/43972902/129363715-73a3a95d-299c-43e4-937a-181d300f5c9e.png)
+
+## Possible errors
+If you have error like this: 
+```shell
+root@mozerpol-pc:/home/mozerpol# docker exec -it 563bcbca514b vsim
+** Warning: setting ADDR_NO_RANDOMIZE failed - Operation not permitted.
+Invalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyTk initialization failed: couldn't connect to display ":0".
+```
+
+To get rid this just run `xhost +local:`. <br/>
+Solution found
+(here)[https://unix.stackexchange.com/questions/199891/invalid-mit-magic-cookie-1-key-when-trying-to-run-program-remotely].
