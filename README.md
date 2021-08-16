@@ -75,4 +75,4 @@ Invalid MIT-MAGIC-COOKIE-1 keyInvalid MIT-MAGIC-COOKIE-1 keyTk initialization fa
 
 To get rid this just run `xhost +local:`. <br/>
 Solution found
-(here)[https://unix.stackexchange.com/questions/199891/invalid-mit-magic-cookie-1-key-when-trying-to-run-program-remotely].
+[here](https://unix.stackexchange.com/questions/199891/invalid-mit-magic-cookie-1-key-when-trying-to-run-program-remotely).
