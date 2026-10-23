@@ -2,10 +2,11 @@ FROM centos:7
 
 LABEL mantainer="Adrian Ruiz aerf2007@gmail.com"
 
-ARG version_modelsim="16.0"
-ARG build_modelsim="211"
-ARG bin_modelsim="ModelSimSetup-${version_modelsim}.0.${build_modelsim}-linux.run"
-ARG url_donwload_modelsim="http://download.altera.com/akdlm/software/acdsinst/${version_modelsim}/${build_modelsim}/ib_installers/${bin_modelsim}"
+ARG version_modelsim_url1="20.1std.1"
+ARG version_modelsim="20.1.1"
+ARG build_modelsim="720"
+ARG bin_modelsim="ModelSimSetup-${version_modelsim}.${build_modelsim}-linux.run"
+ARG url_donwload_modelsim="https://downloads.intel.com/akdlm/software/acdsinst/${version_modelsim_url1}/${build_modelsim}/ib_installers/${bin_modelsim}"
 ARG path_install_modelsim="/tmp"
 
 ENV PATH="/vsim-ase/bin:${PATH}"
